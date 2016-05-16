@@ -1,0 +1,33 @@
+
+<html>
+<head>
+ <meta charset="utf-8" />
+ <title>Formularz</title>
+</head>
+
+<body>
+ <h3>Formularz rejestracji</h3>
+
+<form method="post" action="form_zapis.php">
+
+Login: <input type="text" name="login" /><br />
+Hasło: <input type="password" name="pass" /><br /><br />
+
+Pole nieedytowalne: <input type="text" name="non_edit" readonly /><br />
+Pole niedostępne: <input type="text" name="unavailable" disabled /><br /><br />
+
+<b>Czy chcesz otrzymywać dodatkowe materiały? </b><br />
+<input type="radio" name="choice" value="T" checked />TAK<br />
+<input type="radio" name="choice" value="N" />NIE<br /><br />
+
+<b>Moje zainteresowania to:</b><br />
+<input type="checkbox" name="interests[]" value="sport" checked />Sport<br />
+<input type="checkbox" name="interests[]" value="film" checked />Film<br />
+<input type="checkbox" name="interests[]" value="muzyka" />Muzyka<br /><br />
+
+<input type="submit" value="Wyślij" />
+<input type="reset" /><br />
+
+</form>
+</body>
+</html>

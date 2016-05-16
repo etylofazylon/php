@@ -1,0 +1,67 @@
+<html>
+
+<head>
+  <meta charset="windows-1250" />
+  <title>Formularz HTML</title>
+</head>
+
+<body>
+<h1>Formularz preferencji kulinarnych</h1>
+
+<form action="form_2_zapis.php" method="post"> <!-- rozpoczęcie formularza -->
+
+<fieldset> <!-- grupa pól (informacji) -->
+<p>
+<b>IMIĘ:</b>
+<input type="text" name="imie" value="Tomasz" size="30"
+maxlength="25" style="position:absolute; left:150px; font-style:italic;" />
+<!-- wstawienie pola tekstowego -->
+</p>
+
+<p>
+<b>NAZWISKO:</b>
+<input type="text" name="nazwisko" value="Nowak" size="40"
+maxlength="35" style="position:absolute; left:150px; font-style:italic;" />
+<!-- wstawienie pola tekstowego -->
+</p>
+
+<p>
+<b>Dodatkowe informacje:</b><br />
+<textarea cols="40" rows="6" name="opis">Tu wpisz opis...</textarea>
+<!-- wstawienie wielo-linijkowego pola tekstowego -->
+</p>
+</fieldset> <!-- koniec grupy pól (informacji) -->
+
+<fieldset>
+<b>Podaj swoją płeć:</b><br />
+<input type="radio" name="plec" value="M" checked />Mężczyzna <br />
+<input type="radio" name="plec" value="K" />Kobieta <br />
+</fieldset> <!-- wybór jednokrotny -->
+
+
+
+
+
+<fieldset>
+<b>Wybierz swoją ulubioną potrawę:</b><br />
+<select name="potrawy">
+  <option>Naleśniczki</option>
+  <option>Kotleciki</option>
+  <option>Kiełbaski</option>
+</select>
+</fieldset> <!-- lista rozwijalna (tzw. drop-down) -->
+
+<fieldset>
+<b>Jakich przypraw używasz:</b> <br />
+<input type="checkbox" name="przyprawy[]" value="Sol" /> Sól<br />
+<input type="checkbox" name="przyprawy[]" value="Pieprz" /> Pieprz<br />
+<input type="checkbox" name="przyprawy[]" value="Papryka" /> Papryka<br />
+</fieldset> <!-- wybór wielokrotny -->
+
+<input type="submit" value="Wyślij" />
+<input type="reset" value="Zresetuj" />
+
+</form>
+
+</body>
+</html>
